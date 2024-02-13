@@ -14,9 +14,9 @@ public class Esercizi {
     Es5: (String, substring) stampare il proprio nome al contrario
      */
     public static void main(String[] args) {
-        // Es1
         Scanner tastiera = new Scanner(System.in);
-        System.out.println("Inserisci un numero:");
+        // Es1
+        /* System.out.println("Inserisci un numero:");
         int num = Integer.parseInt(tastiera.nextLine());
         if (num % 2 == 0){
             System.out.println(num);
@@ -24,8 +24,19 @@ public class Esercizi {
         }else{
             System.out.println(num);
             System.out.println("Dispari");
-        }
+        }*/
         // Es2
-        
+        System.out.println("Inserisci una temperatura:");
+        int ts = Integer.parseInt(tastiera.nextLine());
+        double tempMin = -100;
+        double tempMax = 100;
+        double somma = 0;
+
+        for (int i = 0; i < ts; i++){
+            System.out.println("Inserisci la temperatura");
+            double t = Integer.parseInt(tastiera.nextLine());
+            somma += t;
+
+        }
     }
 }
