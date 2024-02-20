@@ -26,7 +26,7 @@ public class Esercizi {
             System.out.println("Dispari");
         }*/
         // Es2
-        System.out.println("Inserisci una temperatura:");
+        System.out.println("Quante temperature vuoi inserire:");
         int ts = Integer.parseInt(tastiera.nextLine());
         double tempMin = -100;
         double tempMax = 100;
