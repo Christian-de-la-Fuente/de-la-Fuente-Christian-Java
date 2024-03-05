@@ -1,5 +1,7 @@
 package lezione_5;
 
+import java.util.Objects;
+
 public class Bottiglia {
     private int capacita;
     private int quantita;
@@ -38,5 +40,20 @@ public class Bottiglia {
                 "capacita=" + capacita +
                 ", quantita=" + quantita +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Bottiglia bottiglia = (Bottiglia) o;
+
+        return capacita == bottiglia.capacita && quantita == bottiglia.quantita;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(capacita, quantita);
     }
 }
