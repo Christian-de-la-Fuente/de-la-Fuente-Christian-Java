@@ -10,7 +10,12 @@ public class Triangolo  extends Poligono {
     }
 
     @Override
-    public int area() {
+    public double area() {
         return base * altezza / 2;
+    }
+
+    @Override
+    public double perimetro() {
+        return lato1 + lato2 + lato3;
     }
 }

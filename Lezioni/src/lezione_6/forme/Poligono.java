@@ -1,19 +1,19 @@
 package lezione_6.forme;
 
-public class Poligono {
-    public int base;
-    public int altezza;
+public abstract class Poligono {
+    public double base;
+    public double altezza;
 
-    public Poligono(int base, int altezza) {
+    public Poligono(double base, double altezza) {
         this.base = base;
         this.altezza = altezza;
     }
 
-    public int area () {
+    public double area () {
         return 0;
     }
 
-    public int perimetro () {
+    public double perimetro () {
         return 0;
     }
 }
